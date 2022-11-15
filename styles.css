@@ -291,7 +291,7 @@ input[type="submit"]:active {
 }
 
 .signUp-links a:hover,
-.signUp-links a:nth-child(2) {
+.signUp-links a:first-child {
     color: #45f3ff;
 }
 .hidden{
