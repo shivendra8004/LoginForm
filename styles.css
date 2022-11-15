@@ -22,6 +22,7 @@ body {
     background: #1c1c1c;
     border-radius: 8px;
     overflow: hidden;
+    display: block;
 }
 
 .box::before {
@@ -168,4 +169,131 @@ input[type="submit"] {
 
 input[type="submit"]:active {
     opacity: 0.8;
+}
+/* SignUp Form Css */
+.signUp-title {
+    color: #45f3ff;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.1em;
+    font-size: 18px;
+}
+.signup-box{
+    position: relative;
+    width: 380px;
+    height: 600px;
+    background: #1c1c1c;
+    border-radius: 8px;
+    overflow: hidden;
+    display: none;
+}
+.signup-box::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 600px;
+    background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+}
+
+.signup-box::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 600px;
+    background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+.signUp-inputBox {
+    position: relative;
+    width: 300;
+    margin-top: 15px;
+
+}
+
+.signUp-inputBox input {
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #23242a;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    z-index: 10;
+
+}
+
+.signUp-inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 20px 0px 10px;
+    font-size: 0.9em;
+    color: #8f8f8f;
+    pointer-events: none;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+
+.signUp-inputBox input:valid~span,
+.signUp-inputBox input:focus~span {
+    color: #45f3ff;
+    transform: translateX(0px) translateY(-34px);
+    font-size: 0.70em;
+    transition: 0.5s;
+}
+
+.signUp-inputBox i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #45f3ff;
+    border-radius: 4px;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 9;
+}
+
+.signUp-inputBox input:valid~i,
+.signUp-inputBox input:focus~i {
+    height: 40px;
+}
+.form {
+    position: absolute;
+    inset: 2px;
+    border-radius: 8px;
+    background: #28292d;
+    z-index: 10;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+}
+.signUp-links {
+    display: flex;
+    justify-content: right;
+}
+
+.signUp-links a {
+    margin: 10px 0;
+    font-size: 0.75em;
+    color: #8f8f8f;
+    text-decoration: none;
+}
+
+.signUp-links a:hover,
+.signUp-links a:nth-child(2) {
+    color: #45f3ff;
+}
+.hidden{
+    display: none;
 }

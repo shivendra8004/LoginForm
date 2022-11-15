@@ -2,21 +2,22 @@
 <html>
 
 <head>
-    <meta charset='utf-8' />
-    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Login Form</title>
-    <meta name='description' content='' />
-    <meta name='viewport' content='width=device-width, initial-scale=1' />
-    <link rel='stylesheet' href='styles.css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="index.js" async defer></script>
 </head>
 
 <body>
-    <div class="box">
+    <!-- SignIn Form -->
+    <div class="box ">
         <div class="form">
             <h2>Sign in</h2>
             <div class="inputBox">
                 <input type="text" required="required">
-                <span>Username</span>
+                <span>Email Id</span>
                 <i></i>
             </div>
             <div class="inputBox">
@@ -26,12 +27,51 @@
             </div>
             <div class="links">
                 <a href="#">Forgot Password</a>
-                <a href="#">Signup</a>
+                <a class="signup" href="#">Signup</a>
             </div>
             <input type="submit" value="Login">
         </div>
     </div>
-    <script src='index.js' async defer></script>
+    <!-- Sign Up Form  -->
+    <div class="signup-box">
+        <div class="form">
+            <h2 class="signUp-title">Sign Up</h2>
+            <div class="signUp-inputBox">
+                <input type="text" required="required">
+                <span>Username</span>
+                <i></i>
+            </div>
+            <div class="signUp-inputBox">
+                <input type="password" required="required">
+                <span>Name</span>
+                <i></i>
+            </div>
+            <div class="signUp-inputBox">
+                <input type="text" required="required">
+                <span>Email Id</span>
+                <i></i>
+            </div>
+            <div class="signUp-inputBox">
+                <input type="password" required="required">
+                <span>Aadhar Card Number</span>
+                <i></i>
+            </div>
+            <div class="signUp-inputBox">
+                <input type="text" required="required">
+                <span>Password</span>
+                <i></i>
+            </div>
+            <div class="signUp-inputBox">
+                <input type="password" required="required">
+                <span>Confirm Password</span>
+                <i></i>
+            </div>
+            <div class="signUp-links">
+                <a class="signin" href="#" onclick="">Signin</a>
+            </div>
+            <input type="submit" value="Login">
+        </div>
+    </div>
 </body>
 
 </html>
