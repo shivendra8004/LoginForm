@@ -18,7 +18,7 @@ body {
 .box {
     position: relative;
     width: 380px;
-    height: 420px;
+    height: 470px;
     background: #1c1c1c;
     border-radius: 8px;
     overflow: hidden;
@@ -31,7 +31,7 @@ body {
     top: -50%;
     left: -50%;
     width: 380px;
-    height: 420px;
+    height: 460px;
     background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
     transform-origin: bottom right;
     animation: animate 6s linear infinite;
@@ -43,7 +43,7 @@ body {
     top: -50%;
     left: -50%;
     width: 380px;
-    height: 420px;
+    height: 460px;
     background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
     transform-origin: bottom right;
     animation: animate 6s linear infinite;
@@ -60,7 +60,7 @@ body {
     }
 }
 
-.form {
+.form-signin {
     position: absolute;
     inset: 2px;
     border-radius: 8px;
@@ -71,7 +71,7 @@ body {
     flex-direction: column;
 }
 
-.form h2 {
+.form-signin h2 {
     color: #45f3ff;
     font-weight: 500;
     text-align: center;
@@ -165,6 +165,14 @@ input[type="submit"] {
     font-weight: 600;
     cursor: pointer;
 
+}
+.error{
+    margin-left: 1px;
+    padding: 20px 0px 10px;
+    font-size: 0.9em;
+    color: #8f8f8f;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
 }
 
 input[type="submit"]:active {

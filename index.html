@@ -13,7 +13,7 @@
 <body>
     <!-- SignIn Form -->
     <div class="box ">
-        <div class="form">
+        <div class="form-signin">
             <h2>Sign in</h2>
             <div class="inputBox">
                 <input type="text" required="required">
@@ -29,47 +29,50 @@
                 <a href="#">Forgot Password</a>
                 <a class="signup" href="#signin">Signup</a>
             </div>
+            <p class="error">incorrect Password!</p>
             <input type="submit" value="Login">
         </div>
     </div>
     <!-- Sign Up Form  -->
     <div class="signup-box">
         <div class="form">
-            <h2 class="signUp-title">Sign Up</h2>
-            <div class="signUp-inputBox">
-                <input type="text" required="required">
-                <span>Username</span>
-                <i></i>
-            </div>
-            <div class="signUp-inputBox">
-                <input type="password" required="required">
-                <span>Name</span>
-                <i></i>
-            </div>
-            <div class="signUp-inputBox">
-                <input type="text" required="required">
-                <span>Email Id</span>
-                <i></i>
-            </div>
-            <div class="signUp-inputBox">
-                <input type="password" required="required">
-                <span>Aadhar Card Number</span>
-                <i></i>
-            </div>
-            <div class="signUp-inputBox">
-                <input type="text" required="required">
-                <span>Password</span>
-                <i></i>
-            </div>
-            <div class="signUp-inputBox">
-                <input type="password" required="required">
-                <span>Confirm Password</span>
-                <i></i>
-            </div>
-            <div class="signUp-links">
-                <a class="signin" href="#signup">Signin</a>
-            </div>
-            <input type="submit" value="Register">
+            <form action="/signup" method="post">
+                <h2 class="signUp-title">Sign Up</h2>
+                <div class="signUp-inputBox">
+                    <input type="text" required="required">
+                    <span>Username</span>
+                    <i></i>
+                </div>
+                <div class="signUp-inputBox">
+                    <input type="password" required="required">
+                    <span>Name</span>
+                    <i></i>
+                </div>
+                <div class="signUp-inputBox">
+                    <input type="text" required="required">
+                    <span>Email Id</span>
+                    <i></i>
+                </div>
+                <div class="signUp-inputBox">
+                    <input type="password" required="required">
+                    <span>Aadhar Card Number</span>
+                    <i></i>
+                </div>
+                <div class="signUp-inputBox">
+                    <input type="text" required="required">
+                    <span>Password</span>
+                    <i></i>
+                </div>
+                <div class="signUp-inputBox">
+                    <input type="password" required="required">
+                    <span>Confirm Password</span>
+                    <i></i>
+                </div>
+                <div class="signUp-links">
+                    <a class="signin" href="#signup">Signin</a>
+                </div>
+                <input type="submit" value="Register">
+            </form>
         </div>
     </div>
 </body>
